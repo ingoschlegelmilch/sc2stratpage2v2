@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Die besten strats weit und breit!</title>
+        <meta charset="utf-8">
+        <meta name=description content="Hier gibt's die geilsten 2v2 SC2 Strategien - aber nur für Terraner!">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon_tank.ico'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="headerdiv">
+            <h1>TT StarCraft 2 2v2 Imba Strats</h1>
+        </div>
+        <div class="site">    
+            <div class="slideshow">
+                <h2>Current map pool</h2>
+                <div class="slideshow_container">
+                    <a target="_blank" href="arctic_gates.html"><img class="mySlides" src="map images/Arctic_Gates.jpg"></a>
+                    <img class="mySlides" src="map images/flooded_city.jpg">
+                    <img class="mySlides" src="map images/overgrown_facility.jpg">
+                    <img class="mySlides" src="map images/seeds_of_aiur.jpg">
+                    <img class="mySlides" src="map images/shrines_of_lizul_0.1.jpg">
+                    <img class="mySlides" src="map images/snowy_mesa_0.1.jpg">
+                    <img class="mySlides" src="map images/traitor's_exile.jpg">
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+            </div>    
+        </div>
+        <footer class="foot">© 2017-2018 Ingo Schlegelmilch</footer>
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusSlides(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>
